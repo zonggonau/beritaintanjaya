@@ -141,16 +141,20 @@ export default function NewsCard({ article, variant = 'standard' }: NewsCardProp
     }
 
     // VARIANT: STANDARD (Vertical Stack)
+    // VARIANT: STANDARD (Vertical Stack)
     return (
-        <Link href={href} className="group flex flex-col h-full">
-            <div className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-gray-100 mb-4">
+        <div className="group flex flex-col h-full relative">
+            <Link href={href} className="absolute inset-0 z-0">
+                <span className="sr-only">View Article</span>
+            </Link>
+            <div className="aspect-[4/3] w-full overflow-hidden rounded-lg bg-gray-100 mb-4 relative pointer-events-none">
                 <img
                     src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
             </div>
-            <div className="flex flex-col flex-1">
+            <div className="flex flex-col flex-1 relative z-10 pointer-events-none">
                 <div className="flex items-center gap-2 mb-3 text-xs font-medium">
                     <span className={`px-2.5 py-0.5 rounded-full uppercase tracking-wide text-[10px] ${badgeColor}`}>
                         {article.category}
@@ -165,6 +169,6 @@ export default function NewsCard({ article, variant = 'standard' }: NewsCardProp
                     {article.excerpt}
                 </p>
             </div>
-        </Link>
+        </div>
     );
 }
