@@ -10,6 +10,7 @@ export interface NewsArticle {
     date: string;
     author: string;
     slug?: string;
+    readTime?: string;
 }
 
 interface NewsCardProps {
