@@ -11,6 +11,7 @@ export const newsData: NewsArticle[] = [
         date: '5 Desember 2025',
         author: 'Humas Pemkab',
         readTime: '5 menit baca',
+        slug: 'bupati-intan-jaya-resmikan-gedung-kantor-baru-dinas-pendidikan',
     },
     {
         id: '2',
@@ -22,6 +23,7 @@ export const newsData: NewsArticle[] = [
         date: '4 Desember 2025',
         author: 'Tim Liputan',
         readTime: '4 menit baca',
+        slug: 'pembangunan-jalan-trans-papua-segmen-intan-jaya-capai-75-persen',
     },
     {
         id: '3',
@@ -33,6 +35,7 @@ export const newsData: NewsArticle[] = [
         date: '3 Desember 2025',
         author: 'Dinas Pendidikan',
         readTime: '3 menit baca',
+        slug: 'ratusan-siswa-sd-terima-bantuan-seragam-dan-tas-sekolah-gratis',
     },
     {
         id: '4',
@@ -44,6 +47,7 @@ export const newsData: NewsArticle[] = [
         date: '2 Desember 2025',
         author: 'Dinas Kesehatan',
         readTime: '4 menit baca',
+        slug: 'puskesmas-sugapa-tingkatkan-layanan-dengan-alat-medis-modern',
     },
     {
         id: '5',
@@ -55,6 +59,7 @@ export const newsData: NewsArticle[] = [
         date: '1 Desember 2025',
         author: 'Dinas Kebudayaan',
         readTime: '6 menit baca',
+        slug: 'festival-budaya-mee-pago-sukses-digelar-di-sugapa',
     },
     {
         id: '6',
@@ -66,6 +71,7 @@ export const newsData: NewsArticle[] = [
         date: '30 November 2025',
         author: 'Dinas Koperasi & UMKM',
         readTime: '5 menit baca',
+        slug: 'umkm-intan-jaya-dapat-pelatihan-manajemen-usaha-dan-pemasaran-digital',
     },
     {
         id: '7',
@@ -77,6 +83,7 @@ export const newsData: NewsArticle[] = [
         date: '29 November 2025',
         author: 'Polres Intan Jaya',
         readTime: '3 menit baca',
+        slug: 'polres-intan-jaya-gelar-patroli-skala-besar-jelang-natal-dan-tahun-baru',
     },
     {
         id: '8',
@@ -88,6 +95,7 @@ export const newsData: NewsArticle[] = [
         date: '28 November 2025',
         author: 'Humas Pemkab',
         readTime: '4 menit baca',
+        slug: 'pemkab-intan-jaya-luncurkan-program-beasiswa-untuk-mahasiswa-berprestasi',
     },
     {
         id: '9',
@@ -99,6 +107,7 @@ export const newsData: NewsArticle[] = [
         date: '27 November 2025',
         author: 'Dinas Kesehatan',
         readTime: '3 menit baca',
+        slug: 'vaksinasi-massal-covid-19-booster-sasar-5000-warga',
     },
     {
         id: '10',
@@ -110,6 +119,7 @@ export const newsData: NewsArticle[] = [
         date: '26 November 2025',
         author: 'Dinas PUPR',
         readTime: '5 menit baca',
+        slug: 'pembangunan-pasar-rakyat-modern-dimulai-target-selesai-2026',
     },
     {
         id: '11',
@@ -121,6 +131,7 @@ export const newsData: NewsArticle[] = [
         date: '25 November 2025',
         author: 'Humas Pemkab',
         readTime: '4 menit baca',
+        slug: 'bupati-hadiri-rapat-koordinasi-pembangunan-papua-tengah',
     },
     {
         id: '12',
@@ -132,6 +143,7 @@ export const newsData: NewsArticle[] = [
         date: '24 November 2025',
         author: 'Dinas Pertanian',
         readTime: '5 menit baca',
+        slug: 'petani-kopi-intan-jaya-raih-penghargaan-kopi-terbaik-papua',
     },
 ];
 

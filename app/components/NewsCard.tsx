@@ -46,7 +46,7 @@ export default function NewsCard({ article, variant = 'standard' }: NewsCardProp
                     <span className="inline-block px-3 py-1 bg-brand-600 text-white text-xs font-bold uppercase tracking-wider rounded mb-4 w-fit shadow-md border border-white/20">
                         {article.category}
                     </span>
-                    <h2 className="text-2xl md:text-5xl font-display font-bold text-white mb-4 leading-tight drop-shadow-xl">
+                    <h2 className="text-2xl md:text-5xl font-display font-bold !text-white mb-4 leading-tight drop-shadow-xl">
                         {article.title}
                     </h2>
                     <p className="text-white md:text-lg line-clamp-2 md:line-clamp-3 mb-4 max-w-2xl drop-shadow-lg font-medium opacity-95">
