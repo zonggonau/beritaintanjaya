@@ -17,11 +17,20 @@ export const metadata: Metadata = {
     siteName: 'Berita Intan Jaya',
     locale: 'id_ID',
     type: 'website',
+    images: [
+      {
+        url: '/images/default-og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Berita Intan Jaya',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Berita Intan Jaya',
     description: 'Portal Berita Resmi Pemkab Intan Jaya',
+    images: ['/images/default-og.png'],
   },
 };
 

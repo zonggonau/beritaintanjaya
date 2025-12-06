@@ -37,13 +37,14 @@ export async function generateMetadata(
         openGraph: {
             title: article.title,
             description: article.excerpt,
-            url: `https://intanjayakab.go.id/berita/${slug}`,
+            url: `/berita/${slug}`, // Relative path is resolved against metadataBase
             siteName: 'Berita Intan Jaya',
             images: [
                 {
-                    url: article.image || '',
+                    url: article.image || '/images/default-og.png',
                     width: 1200,
                     height: 630,
+                    alt: article.title,
                 },
                 ...previousImages,
             ],
@@ -56,7 +57,10 @@ export async function generateMetadata(
             card: 'summary_large_image',
             title: article.title,
             description: article.excerpt,
-            images: [article.image || ''],
+            images: [article.image || '/images/default-og.png'],
+        },
+        alternates: {
+            canonical: `/berita/${slug}`,
         },
     };
 }
@@ -79,7 +83,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
     // Filter out current article from related
     const filteredRelated = relatedNews.filter(item => item.id !== article.id).slice(0, 3);
 
-    const shareUrl = `https://intanjayakab.go.id/berita/${slug}`;
+    const shareUrl = `https://berita.intanjayakab.go.id/berita/${slug}`;
 
     return (
         <div className="min-h-screen bg-white flex flex-col font-body">

@@ -16,6 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://berita.intanjayakab.go.id'),
   title: "Berita Intan Jaya - Portal Berita Pemerintah Kabupaten Intan Jaya",
   description: "Portal berita resmi Pemerintah Kabupaten Intan Jaya. Informasi terkini seputar pemerintahan, pembangunan, pendidikan, kesehatan, sosial budaya, ekonomi, dan keamanan.",
   keywords: "Intan Jaya, Kabupaten Intan Jaya, Berita Papua, Pemerintah Intan Jaya, Papua Tengah",
@@ -23,7 +24,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Berita Intan Jaya",
     description: "Portal berita resmi Pemerintah Kabupaten Intan Jaya",
+    url: 'https://berita.intanjayakab.go.id',
+    siteName: 'Berita Intan Jaya',
     type: "website",
+    locale: 'id_ID',
+    images: [
+      {
+        url: '/images/default-og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Berita Intan Jaya',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Berita Intan Jaya',
+    description: 'Portal Berita Resmi Pemkab Intan Jaya',
+    images: ['/images/default-og.png'],
   },
 };
 
